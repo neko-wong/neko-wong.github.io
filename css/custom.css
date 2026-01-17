@@ -1,0 +1,14 @@
+/* 页脚完全透明 */
+#footer {
+    background: transparent !important;
+}
+
+/* 移除页脚的遮罩层 */
+#footer::before {
+    background: transparent !important;
+}
+
+/* 夜间模式下的遮罩层也设置为透明 */
+[data-theme="dark"] #footer::before {
+    background: transparent !important;
+}
